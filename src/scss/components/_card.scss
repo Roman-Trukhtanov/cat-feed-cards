@@ -1,0 +1,51 @@
+.card {
+	position: relative;
+	color: $color-black;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+// TEXTS
+.card__sale-wrap,
+.card__description-wrap,
+.card__stock-wrap {
+	margin-top: rem(14);
+}
+
+.card__sale-text,
+.card__stock-text,
+.card__description {
+	margin: 0;
+	font-weight: 400;
+	font-size: rem(13);
+	line-height: rem(15);
+	text-align: center;
+	color: $color-white;
+}
+
+.card__sale-link {
+	display: inline-block;
+	color: $color-curious-blue;
+	transition: color $duration-normal;
+
+	&:focus {
+		outline: none;
+	}
+
+	@include desktop {
+		&:focus,
+		&:hover {
+			color: $color-picton-blue;
+		}
+	}
+}
+
+.card__sale-link--border {
+	border-bottom: rem(1) dashed $color-curious-blue;
+}
+
+.card__stock-text {
+	color: $color-laser-lemon;
+}

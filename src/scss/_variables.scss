@@ -1,0 +1,36 @@
+// stylelint-disable scss/dollar-variable-empty-line-before
+// stylelint-disable scss/dollar-variable-colon-newline-after
+
+// SIZES
+$default-root-font-size: 10;
+
+// COLORS
+
+$color-black: #000;
+$color-white: #fff;
+$color-dove-gray: #666;
+$color-curious-blue: #1698d9;
+$color-picton-blue: #2ea8e6;
+$color-laser-lemon: #ff6;
+$color-razzmatazz: #d91667;
+$color-cerise-red: #e52e7a;
+$color-nobel: #b3b3b3;
+
+// FONTS
+$font-family-exo: "Exo", "Trebuchet MS", sans-serif;
+$font-family-default: "Trebuchet MS", sans-serif;
+
+// EASING TRANSITIONS
+$duration-normal: 0.35s;
+$easing-back-out: cubic-bezier(0.25, 0.74, 0.22, 1.1); // http://cubic-bezier.com/#.25,.74,.22,1.1
+$easing-back-in: cubic-bezier(0.47, -0.1, 0.5, -0.06); // http://cubic-bezier.com/#.47,-0.1,.5,-.06
+$easing-out: ease-out;
+$easing-in: ease-in;
+
+// GRADIENTS
+$site-bg-gradient: linear-gradient(
+	180deg,
+	rgba($color-black, 0.5) 0%,
+	rgba($color-black, 0) 50%,
+	rgba($color-black, 0.5) 100%
+);

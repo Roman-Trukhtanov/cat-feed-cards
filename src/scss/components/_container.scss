@@ -1,0 +1,9 @@
+.container {
+	margin: 0 auto;
+	padding: 0 rem(30);
+	max-width: rem(1180);
+
+	@include only-mobile {
+		padding: 0 rem(20);
+	}
+}

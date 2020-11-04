@@ -1,0 +1,54 @@
+.cards {
+	position: relative;
+	width: 100%;
+}
+
+.cards__wrap {
+	position: relative;
+	padding-top: rem(20);
+
+	// For animation
+	@include desktop {
+		min-height: rem(647);
+	}
+
+	@include mobile {
+		padding-top: rem(30);
+	}
+}
+
+.cards__title-wrap {
+	margin-bottom: rem(24);
+	padding: 0 rem(15);
+}
+
+.cards__title {
+	margin: 0;
+	font-family: $font-family-exo;
+	font-weight: 100;
+	font-style: normal;
+	font-size: rem(36);
+	line-height: rem(43);
+	text-align: center;
+}
+
+.cards__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style: none;
+	margin: 0 rem(-40);
+	padding: 0;
+
+	@include mobile {
+		margin: 0 rem(-30);
+	}
+}
+
+.cards__item {
+	margin: 0 rem(40) rem(51);
+
+	@include mobile {
+		margin: 0 rem(30) rem(31);
+	}
+}

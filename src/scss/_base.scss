@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: px($default-root-font-size);
+	scroll-behavior: smooth;
+
+	@include desktop-scalable {
+		font-size: vw($default-root-font-size);
+	}
+
+	@include mobile-scalable {
+		font-size: vmin($default-root-font-size);
+	}
+}
+
+html,
+body {
+	width: 100%;
+	min-height: 100%;
+}
+
+body {
+	font-family: $font-family-default;
+	-webkit-font-smoothing: antialiased;
+	text-decoration-skip: objects;
+	text-rendering: optimizeLegibility;
+	text-size-adjust: 100%;
+	color: $color-white;
+	-webkit-tap-highlight-color: transparent;
+	background-image: url("../images/bg-pattern@2x.jpg");
+	background-size: 70px;
+	background-repeat: repeat;
+	background-color: $color-black;
+
+	&::before {
+		content: "";
+		position: fixed;
+		left: 0;
+		top: 0;
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-image: $site-bg-gradient;
+	}
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+button:not([disabled]),
+a[role="button"]:not([disabled]) {
+	cursor: pointer;
+}

@@ -1,0 +1,19 @@
+.site-container {
+	position: relative;
+	overflow-x: hidden;
+	height: 100%;
+	min-height: 100vh;
+
+	@include desktop {
+		overflow-x: hidden;
+		max-width: 100%;
+	}
+
+	@include mobile {
+		opacity: 1;
+		visibility: visible;
+		transition:
+			opacity 0.55s ease-in-out 0.25s,
+			visibility 0.55s ease-in-out 0.25s;
+	}
+}

@@ -1,0 +1,31 @@
+extends pug/base
+
+prepend vars
+	- title = 'Ты сегодня покормил кота?'
+	- description = 'Тестовый проект на нативном JS'
+
+append vars
+	- link.appleTouchIcon180x180 = '/apple-touch-icon.png'
+	- link.icon32x32 = '/favicon-32x32.png'
+	- link.icon16x16 = '/favicon-16x16.png'
+	- link.manifest = '/site.webmanifest'
+	- link.maskIcon.color = '#5bbad5'
+	- meta.msapplicationTileColor = '#ffc40d'
+	- meta.msapplicationTileImage = '/mstile-150x150.png'
+	- meta.themeColor = '#ffffff'
+	- meta.appleMobileWebAppTitle = 'Ты сегодня покормил кота?'
+	- meta.applicationName = 'Ты сегодня покормил кота?'
+	- meta.viewport = 'width=device-width, initial-scale=1.0'
+
+append head-end
+	include pug/cards-data
+
+block content
+	.site-container.visibility-hidden
+		include pug/components/page-header
+
+		main.page-main
+			.page-main__wrap
+				include pug/components/cards
+
+		include pug/components/page-footer

@@ -1,0 +1,33 @@
+@function max($numbers...) {
+	@return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+	@return m#{i}n(#{$numbers});
+}
+
+@mixin supports-safe-area-insets {
+	// stylelint-disable-next-line
+	@supports (padding: max(0px)) {
+		@content;
+	}
+}
+
+@mixin font-face($url, $font-family, $font-weight, $font-style) {
+	@font-face {
+		src:
+			url($url + ".woff2") format("woff2"),
+			url($url + ".woff") format("woff");
+		font-family: $font-family;
+		font-weight: $font-weight;
+		font-style: $font-style;
+		font-display: swap;
+	}
+}
+
+@mixin retina {
+	// stylelint-disable-next-line media-feature-name-no-vendor-prefix
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+		@content;
+	}
+}

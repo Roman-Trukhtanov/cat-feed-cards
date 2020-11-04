@@ -1,0 +1,36 @@
+@mixin desktop {
+	@media (min-width: 1025px) {
+		@content;
+	}
+}
+
+@mixin desktop-scalable {
+	// change the values for the situation
+	@media (min-width: 1025px) and (max-width: 1280px) {
+		@content;
+	}
+}
+
+@mixin mobile {
+	@media (max-width: 1024px) {
+		@content;
+	}
+}
+
+@mixin mobile-scalable {
+	@media (max-width: 375px) {
+		@content;
+	}
+}
+
+@mixin only-mobile {
+	@media (max-width: 767px) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (min-width: 768px) and (max-width: 1024px) {
+		@content;
+	}
+}
