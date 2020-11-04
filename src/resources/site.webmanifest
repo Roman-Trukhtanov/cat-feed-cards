@@ -1,6 +1,6 @@
 {
-    "name": "Ты сегодня покормил кота?",
-    "short_name": "Тестовый проект на нативном JS",
+    "name": "FunBox - Test Project",
+    "short_name": "FunBox - Test Project",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
