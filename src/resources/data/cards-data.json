@@ -28,7 +28,7 @@
 	{
 		"id": 2,
 		"isDisabled": false,
-		"isSelected": false,
+		"isSelected": true,
 		"mark": "Сказочное заморское яство",
 		"markWarning": "Котэ не&nbsp;одобряет?",
 		"title": {
