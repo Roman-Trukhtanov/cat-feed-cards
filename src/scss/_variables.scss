@@ -4,8 +4,12 @@
 // SIZES
 $default-root-font-size: 10;
 
-// COLORS
+// BREAKPOINTS
+$base-desktop-screen: 1280px;
+$base-screen-height: 680px;
+$base-mobile-screen: 375px;
 
+// COLORS
 $color-black: #000;
 $color-white: #fff;
 $color-dove-gray: #666;
